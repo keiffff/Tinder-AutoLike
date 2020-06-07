@@ -1,0 +1,20 @@
+
+# OSX
+#
+.DS_Store
+
+# Output
+#
+dist
+
+# Visual Studio Code
+#
+.vscode/
+
+# node.js
+#
+node_modules/
+*.log
+
+# Secret
+credentials.json
