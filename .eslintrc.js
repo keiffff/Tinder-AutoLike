@@ -1,28 +1,29 @@
 module.exports = {
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
-    sourceType: "module",
-    project: "./tsconfig.json",
+    sourceType: 'module',
+    project: './tsconfig.json',
   },
   extends: [
-    "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended",
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+    'plugin:prettier/recommended',
   ],
   rules: {
     // eslint
-    "newline-before-return": "warn",
-    "no-console": "off",
-    "import/prefer-default-export": "off",
-    "no-fallthrough": "off",
-    "no-restricted-syntax": "off",
+    'newline-before-return': 'warn',
+    'no-console': 'off',
+    'import/prefer-default-export': 'off',
+    'no-fallthrough': 'off',
+    'no-restricted-syntax': 'off',
     // @typescript-eslint
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/prefer-interface": "off",
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/prefer-interface': 'off',
     // prettier
-    "prettier/prettier": [
-      "warn",
+    'prettier/prettier': [
+      'warn',
       {},
       {
         usePrettierrc: true,

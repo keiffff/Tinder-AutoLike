@@ -11,7 +11,7 @@ const puppeteerConfig: puppeteer.LaunchOptions = {
   headless: false,
 };
 
-const autoLike = async () => {
+export const autoLike = async () => {
   try {
     const browser = await puppeteer.launch(puppeteerConfig);
     const page = await browser.newPage();
@@ -37,5 +37,3 @@ const autoLike = async () => {
     process.exit();
   }
 };
-
-autoLike();
